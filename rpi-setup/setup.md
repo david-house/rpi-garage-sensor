@@ -46,7 +46,7 @@ From the command line:
 
 Output should look something like this:
 
-`
+```
 +-----+-----+---------+------+---+-Pi ZeroW-+---+------+---------+-----+-----+
 
  | BCM | wPi |   Name  | Mode | V | Physical | V | Mode | Name    | wPi | BCM |
@@ -96,6 +96,6 @@ Output should look something like this:
  +-----+-----+---------+------+---+----++----+---+------+---------+-----+-----+
 
  | BCM | wPi |   Name  | Mode | V | Physical | V | Mode | Name    | wPi | BCM |
- 
+
  +-----+-----+---------+------+---+-Pi ZeroW-+---+------+---------+-----+-----+
-`
+```
