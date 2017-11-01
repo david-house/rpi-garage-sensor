@@ -3,8 +3,7 @@ from time import sleep
 import RPi.GPIO as GPIO
 from Adafruit_BME280 import *
 
-# to use Raspberry Pi board pin numbers
-#GPIO.setmode(GPIO.BOARD)
+# to use Raspberry Pi BCM pin numbers
 GPIO.setmode(GPIO.BCM)
 # set up the GPIO channels
 GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_OFF)
