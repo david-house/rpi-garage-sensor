@@ -5,14 +5,17 @@ from Adafruit_BME280 import *
 
 # to use Raspberry Pi BCM pin numbers
 GPIO.setmode(GPIO.BCM)
+
 # set up the GPIO channels
 GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_OFF)
 GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_OFF)
 
+# add lookups for the sensor states
 garage_door_state = {0: "Closed", 1: "Open"}
 pir_state = {0: "No motion", 1: "Motion"}
 
-sensor = BME280(t_mode=BME280_OSAMPLE_8, p_mode=BME280_OSAMPLE_8, h_mode=BME280_OSAMPLE_8)
+# create an instance of the BME280 sensor
+sensor = BME280(t_mode=BME280_OSAMPLE_16, p_mode=BME280_OSAMPLE_16, h_mode=BME280_OSAMPLE_16, filter=BME280_FILTER_16)
 
 
 while True:
